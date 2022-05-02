@@ -1,0 +1,24 @@
+﻿<Application x:Class="material.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:material"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- PALETTE MUST LOAD FIRST AS IT IS LOADED IN MODULES BELOW --> 
+                <ResourceDictionary Source="Modules/Pallete/Palette.xaml"/>
+                <ResourceDictionary Source="Modules/ResourceDictionaries/Material.xaml"/>
+                
+                <!-- SIZES MUST LOAD AS IT IS LOADED IN MODULES BELOW -->
+                <ResourceDictionary Source="Modules/Buttons/WindowControlButtonSizes.xaml"/>
+
+                <!-- BUTTONS -->
+                <ResourceDictionary Source="Modules/Buttons/WindowControlButton.xaml"/>
+                <ResourceDictionary Source="Modules/Buttons/WindowControlCloseButton.xaml"/>
+                <ResourceDictionary Source="Modules/Buttons/WindowControlMaximizeButton.xaml"/>
+                <ResourceDictionary Source="Modules/Buttons/WindowControlMinimizeButton.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
